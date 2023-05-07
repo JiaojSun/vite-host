@@ -5,11 +5,7 @@ import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 
 export default defineConfig(async ({ command }) => ({
-	server: {
-		fs: {
-			allow: ['.', '../shared'],
-		},
-	},
+	server: { fs: { allow: ['.', ] } },
 	plugins: [
 		await federation({
 			options: {
